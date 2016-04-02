@@ -211,13 +211,21 @@
                   </div>
                 </div>
                 
-                <div class="field-group guestbook-note">
+                <div class="field-group">
                   <div class="clearfix">
                     <label class="field" for="message_note">Message</label>
                     <textarea class="required" id="message_note" name="message[note]">
                     </textarea>
                   </div>
                 </div>
+
+                <div class="field-group guestbook-note">
+                  <div class="clearfix">
+                    <label class="field" for="photo_url">Photo</label>
+                    <input accept="image/png,image/gif,image/jpeg" name="photo_url" id="photo_url" type="file" />
+                  </div>
+                </div>
+                <div class="max">Max 5MB</div>
                 
                 
                 <input id="message_thumbnail_url" name="message[thumbnail][url]" type="hidden" />
@@ -233,17 +241,7 @@
                   <a href="#" id="cancel-submit-message">Cancel</a>
                   <button data-disable-with="Publish" name="button" type="submit">Publish</button>
                 </div>
-              </form>
-              <form accept-charset="UTF-8" action="#" enctype="multipart/form-data" id="guestbook-photo-upload" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="xNw8qXQllR650tFEFKwEBew2l1YQOS78CUSpuHXw4Gc=" /></div>
-              <input name="params" type="hidden" value="{&quot;template_id&quot;:&quot;83411a1fb7304db3b73d5793804b8c24&quot;,&quot;auth&quot;:{&quot;key&quot;:&quot;930278d0147b4952be0f1e725dd46b42&quot;,&quot;max_size&quot;:5000000,&quot;expires&quot;:&quot;2016/03/19 18:13:32+00:00&quot;}}" /><input name="signature" type="hidden" value="2c5245c5f6dad19f09fe6647843b6f07a19b16df" />
-              <div class="field-group guestbook-note">
-                <div class="clearfix">
-                  <label class="field" for="photo">Photo</label>
-                  <input accept="image/png,image/gif,image/jpeg" name="photo" type="file" />
-                </div>
-              </div>
-              <input id="cid" name="cid" type="hidden" value="561b0f8f366533001e3e0000" />
-              <div class="max">Max 5MB</div>
+              
             </form>
             <div id="guestbook-photo-preview"></div>
           </div>
