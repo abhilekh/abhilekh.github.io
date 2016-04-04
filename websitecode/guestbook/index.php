@@ -256,7 +256,38 @@
             $username = "root";
             $password = "Apeksh@1";
             $dbname = "wed";
-          >
+
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            } 
+            $sql = "SELECT * FROM wishes";
+
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) {
+                  echo '<li>
+                  <div class="message-information clearfix">
+                    <div class="message-name">'.$row["name"].'</div>
+                    <div class="message-time">3 months ago</div>
+                  </div>
+                  
+                  <div class="message-note">
+                    <p>' . $row["wishes"] .'</p>
+                  </div>
+                  
+                </li>'
+                    
+                }
+            } else {
+                echo "0 results";
+            }
+
+          ?>
             <li>
               <div class="message-information clearfix">
                 <div class="message-name">Krishna Goyal</div>
