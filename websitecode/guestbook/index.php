@@ -267,264 +267,32 @@
 
             $result = $conn->query($sql);
 
+            $prename = '<li>
+                  <div class="message-information clearfix">
+                    <div class="message-name">';
+
+            $pretime = '</div>
+                    <div class="message-time">';
+
+            $premessage = '</div> </div>
+                  <div class="message-note"> <p>';
+
+            $postall = '</p></div></li>';
+
+            $currentdt = new DateTime('2012-09-11 10:25:00');
+
             if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
-                  echo '<li>
-                  <div class="message-information clearfix">
-                    <div class="message-name">'.$row["name"].'</div>
-                    <div class="message-time">3 months ago</div>
-                  </div>
-                  
-                  <div class="message-note">
-                    <p>' . $row["wishes"] .'</p>
-                  </div>
-                  
-                </li>'
-                    
+                  $start_date = new DateTime($row["d"]);
+                  $since_start = $start_date->diff($currentdt);
+                  echo $prename . $row["name"] . $pretime . "3 months ago" . $premessage . $row["wishes"] . $postall;
                 }
             } else {
                 echo "0 results";
             }
 
           ?>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Krishna Goyal</div>
-                <div class="message-time">3 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Very Very big congratulations.</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Sai Gowthami Asam</div>
-                <div class="message-time">3 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Dear Megha & Hardhik,</p>
-                <p>Hearty Congratulations to you both. </p>
-                <p>Wish you both a very very happy married life :). Enjoy!!</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Sekhar and family</div>
-                <div class="message-time">3 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Megha and Abhilekh,</p>
-                <p>Congratulations to both of you!Happy Wedding☺☺👫👍👏👏</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Anju Masi</div>
-                <div class="message-time">4 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Sorry will not be able to attend in person but our good wishes and blessing come to you all the same and we hope you have the best of everything in life. Congrats and lots of love to both of you.</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Zil</div>
-                <div class="message-time">4 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Many Many Congratulations to you both & your families..... I'm not sure whether I will be attending the wedding or not but lots of wishes, good luck and have a beautiful journey for life long called "MARRIAGE"</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Sunay</div>
-                <div class="message-time">4 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Congrats Bro!!</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Anand and Mansi</div>
-                <div class="message-time">4 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>So excited for you two! Remember the weddings are meant to be stressful but just live above that and enjoy it to the fullest!!! Best of luck in future ahead and hope to catch afterwards!!!</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Pooja</div>
-                <div class="message-time">4 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Congratulations dear..😊😊...you two look awsm together..wish you wonderful life ahead..</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Aarti (Pooja Modi&#39;s Sister)</div>
-                <div class="message-time">4 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Hey Dear, Congratulations and Enjoy new chapter of life...</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Pallav shah</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Heartily congrats to both of you.... Lovely couple and such a lovely website as well :-)</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Pakya.. :P</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Hearty congratulations to ya'll.. I wish I could make it for the wedding but all my good wishes!!!!</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Akshay Garg</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Heartiest congratulations to you both. You guys look like a perfect couple. Lovely website as well. Kudos!!</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Dushyant Patel</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Many congratulations on tying the knot! May this day be the just the beginning of a happy life together. Wish you both a prosperous future ahead.</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Nidhi &amp; Parin Shah</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Congratulations to the both of you! We wish you all the best in your married life. Love each other forever and let God be the center of your relationship.</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Mansi Shah</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Many Many Congratulations both of you....
-                  <br />Both of You compliment each other .....
-                <br />Wish you lots and lots of happiness and wish you a very happy married life......</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Vedang Shah</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Congratulations ! !:D Both of you look lovely and wonderful together. Wish you an amazing and a very happy life ahead.</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">dr nipesh patel</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Congratulations to both of you. Looking so cool togather.
-                <br />Prey for your best life ahead. God bless you</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Dylan and Ericka</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Congratulations!!!  You guys are a perfect pair :)</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Janani and Neeraj</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Heartiest congratulations both of you! You look perfect together. Love the website and all the pics are super cute! Wish u guys a very happy married life!</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Rishi</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Congratulations guys !! much love :D</p>
-              </div>
-              
-            </li>
-            <li>
-              <div class="message-information clearfix">
-                <div class="message-name">Shah</div>
-                <div class="message-time">5 months ago</div>
-              </div>
-              
-              <div class="message-note">
-                <p>Congrats!!!</p>
-              </div>
-              
-            </li>
           </ul>
         </div>
         <div id="guestbook-bottom"></div>
