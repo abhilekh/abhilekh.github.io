@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"7c24439aad","applicationID":"1660434","transactionName":"cQxYTURcCgpXRh0ODl8GRlhRVkkFR0dGCQxtE1deUw==","queueTime":2,"applicationTime":155,"agent":""}</script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"7c24439aad","applicationID":"1660434","transactionName":"cQxYTURcCgpXRh0ODl8GRlhRVkkBR1FBEgNdDF0=","queueTime":2,"applicationTime":158,"agent":""}</script>
   <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(e,t){function n(){}function r(e){function t(e){return e&&e instanceof n?e:e?a(e,i,o):o()}function s(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,f=0;u>f;f++)a[f].apply(i,r);var s=c[w[n]];return s&&s.push([h,n,r,i]),i}function p(e,t){g[e]=l(e).concat(t)}function l(e){return g[e]||[]}function d(e){return f[e]=f[e]||r(s)}function v(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in c||(c[t]=[])})}var g={},w={},h={on:p,emit:s,get:d,listeners:l,context:t,buffer:v};return h}function o(){return new n}var i="nr@context",a=e("gos"),u=e(1),c={},f={},s=t.exports=r();s.backlog=c},{1:12,gos:"7eSDFh"}],ee:[function(e,t){t.exports=e("QJf3ax")},{}],3:[function(e,t){function n(e,t){return function(){r(e,[(new Date).getTime()].concat(i(arguments)),null,t)}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],u=["addPageAction"],c="api-";o(a,function(e,t){newrelic[t]=n(c+t,"api")}),o(u,function(e,t){newrelic[t]=n(c+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),r("err",[e,(new Date).getTime()])}},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,t){t.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,t){function n(e,t,n){if(r.call(e,t))return e[t];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[t]=o,o}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],handle:[function(e,t){t.exports=e("D5DuLP")},{}],D5DuLP:[function(e,t){function n(e,t,n,o){r.buffer([e],o),r.emit(e,t,n)}var r=e("ee").get("handle");t.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(e,t){function n(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");t.exports=n},{gos:"7eSDFh"}],id:[function(e,t){t.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,t){function n(){if(!v++){var e=d.info=NREUM.info,t=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){u(p,function(t,n){e[t]||(e[t]=n)});var n="https"===s.split(":")[0]||e.sslForHttp;d.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=d.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=e("handle"),u=e(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),d=t.exports={offset:i(),origin:s,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,t){t.exports=e("G9z0Bl")},{}],12:[function(e,t){function n(e,t){var n=[],o="",i=0;for(o in e)r.call(e,o)&&(n[i]=t(o,e[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],13:[function(e,t){function n(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=n},{}]},{},["G9z0Bl"]);</script>
   
   <link rel="shortcut icon" href="http://www.abhilekhwedsmegha.com:8080/com.wed/img/sicon.jpg">
@@ -23,7 +23,7 @@
   <meta property="og:title" content="Megha & Abhilekh">
   
   
-  <title>Events | Megha & Abhilekh</title>
+  <title>Guestbook | Megha & Abhilekh</title>
   
   <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/css/boilerplate-575e10db077c81a27280c0aa364115df.css" media="screen, print" rel="stylesheet" />
   <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/css/homepage-9b861d789ae483153981774b446dae61.css" media="screen, print" rel="stylesheet" />
@@ -156,8 +156,8 @@
           <li>
             <a data-pjax="" href="../roka/index.html">Engagement</a>
           </li>
-          <li class="active">
-            <a data-pjax="" href="index.html">Events</a>
+          <li>
+            <a data-pjax="" href="../events/index.html">Events</a>
           </li>
           <li>
             <a data-pjax="" href="../photos/index.html">Photos</a>
@@ -168,8 +168,8 @@
           <li>
             <a data-pjax="" href="../information/index.html">RSVP &amp; Contact Us</a>
           </li>
-          <li>
-            <a data-pjax="" href="../guestbook/index.html">Guestbook</a>
+          <li class="active">
+            <a data-pjax="" href="index.html">Guestbook</a>
           </li>
           <li>
             <a data-pjax="" href="../family/index.html">Family</a>
@@ -185,98 +185,339 @@
         <p>&nbsp;</p></div>
       </div>
       <div id="content" data-pjax-container>
-        <div id="custom">
-          <h1>Events</h1>
-          <div class="page-description">
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img alt="" src="https://d25uo7j7o9w973.cloudfront.net/uploads/story/561b0f8f366533001e3e0000/a1/c508b0818b11e59ed589d7df59810e/ganpati-Bappa-image.jpg" style="height: 63px; width: 50px;" />&nbsp;</p>
-            <p>Marwari wedding ceremonies from central India have their own regional traditions and customs that add a unique flavour and colour to each ceremony.&nbsp;</p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+        <div id="guestbook">
+          <h1>Guestbook</h1>
+          
+          <div class="page-description guestbook-style-book">
+            Feel free to share your thoughts and wishes as we prepare to celebrate our special day.
           </div>
-          <ul>
-            <li class="clearfix">
-              <h2>Pre-Wedding Events on 19th April</h2>
+          
+          
+          <div id="open-guestbook">
+            <div id="guestbook-top"></div>
+            <div id="guestbook-middle">
+              <div id="guestbook-header" class="clearfix">
+                <div id="message-count">21 messages</div>
+                <div id="add-message"><a href="#" id="add-message-link">Post a message</a></div>
+              </div>
               
-              <p><strong>Megha&#39;s Haldi Ceremony: - April 19th,&nbsp;11:00 AM</strong></p>
-              <p><strong>Abhilekh&#39;s Haldi Ceremony: - April 19th,&nbsp;2:00 PM</strong></p>
-              <p><strong>Hotel Grand Xenia&nbsp;Ajmer, Rajasthan</strong></p>
-              <p>&nbsp;</p>
-              <p><strong>Haldi Ceremony:&nbsp;</strong>This is the common ritual held at both at the bride and the groom's place in which a paste of haldi is applied on the Megha's and Abhilekh's body before their wedding.&nbsp;</p>
-              <p><img alt="" src="http://www.abhilekhwedsmegha.com:8080/com.wed/img/ceremonies/haldi.png" style="height: 333px; width: 500px;" /></p>
-              <p>&nbsp;</p>
-              <p><strong>Megha&#39;s Godh-Bharai - April 19th, 4:00 PM</strong></p>
-              <p><strong>Hotel Grand Xenia&nbsp;Ajmer, Rajasthan</strong></p>
-              <p>&nbsp;</p>
-              <p><strong>Godh-Bharai:</strong>&nbsp;This wedding ritual marks the acceptance of Megha as a part of the Abhilekh's family.It will be conducted by the female members of Abhilekh's family. Megha will be blessed with jewellery, sarees, suits, hand bags,footwear, fruits & sweets. Yaay for Megha!!!!!!</p>
-              <p><img alt="" src="http://www.abhilekhwedsmegha.com:8080/com.wed/img/ceremonies/godh-bharai.jpg" style="height: 334px; width: 500px;" /></p>
-              <p>&nbsp;</p>
-              <p><strong>Abhilekh&#39;s Tilak - April 19th, 4:15 PM</strong></p>
-              <p><strong>Hotel Grand Xenia&nbsp;Ajmer, Rajasthan</strong></p>
-              <p>&nbsp;</p>
-              <p><strong>Tilak:</strong>&nbsp;Just as Godh-Bharai marks the acceptance of Megha into Abhilekh's family. Tilak marks the same for Abhilekh. Abhilekh will be gifted with chain, wrist watch, clothes, dry fruits and sweets. I have my time!!!!!!</p>
-              <p><img alt="" src="http://www.abhilekhwedsmegha.com:8080/com.wed/img/ceremonies/tilak.jpg" style="height: 334px; width: 500px;" /></p>
-              <p>&nbsp;</p>
-              <p><strong>Ring Ceremony - April 19th, 4:30 PM</strong></p>
-              <p><strong>Hotel Grand Xenia&nbsp;Ajmer, Rajasthan</strong></p>
-              <p>&nbsp;</p>
-              <p><strong>Ring Ceremony:</strong>&nbsp;In India, it marks the beginning of the wedding accord. The exchange of wedding rings represents the vows and promises Megha & Abhilekh have exchanged.</p>
-              <p><img alt="" src="http://www.abhilekhwedsmegha.com:8080/com.wed/img/ceremonies/ring.jpg" style="height: 334px; width: 500px;" /></p>
+              <div id="guestbook-post">
+                <form accept-charset="UTF-8" action="http://www.abhilekhwedsmegha.com/message/index.php" method="post">
+                
+                <div class="field-group">
+                  <div class="clearfix">
+                    <label class="field" for="message_name">Name</label>
+                    <input class="required" id="message_name" name="message[name]" type="text" />
+                  </div>
+                </div>
+                
+                <div class="field-group">
+                  <div class="clearfix">
+                    <label class="field" for="message_note">Message</label>
+                    <textarea class="required" id="message_note" name="message[note]">
+                    </textarea>
+                  </div>
+                </div>
 
-            </li>
-            <li class="clearfix">
-              <h2>Pre-Wedding Events on 20th April</h2>
-
-              <p><strong>Megha&#39;s Family Bhaat Ceremony - April 20th, 11:00 AM</strong></p>
-              <p><strong>Abhilekh&#39;s Family Bhaat Ceremony - April 20th, 12:00 PM</strong></p>
-              <p><strong>Hotel Grand Xenia&nbsp;Ajmer, Rajasthan</strong></p>
-              <p>&nbsp;</p>
-              <p><strong>Ring Ceremony:</strong>&nbsp;In India, it marks the beginning of the wedding accord. The exchange of wedding rings represents the vows and promises Megha & Abhilekh have exchanged.</p>
-              <p>&nbsp;</p>
-
-              <p><strong>Thapa - April 20th, 2:00 PM</strong></p>
-              <p><strong>Hotel Grand Xenia&nbsp;Ajmer, Rajasthan</strong></p>
-              <p>&nbsp;</p>
-              <p><strong>Thapa:</strong>&nbsp;Thapa signifies the welcoming of the God's before the commencement of the marriage procedure..</p>
-              <p>&nbsp;</p>
-
-            </li>
-            <li class="clearfix">
-              <h2>Wedding Ceremony</h2>
+                <!--<div class="field-group guestbook-note">
+                  <div class="clearfix">
+                    <label class="field" for="photo_url">Photo</label>
+                    <input accept="image/png,image/gif,image/jpeg" name="photo_url" id="photo_url" type="file" />
+                  </div>
+                </div>
+                <div class="max">Max 5MB</div>
+                
+                
+                <input id="message_thumbnail_url" name="message[thumbnail][url]" type="hidden" />
+                <input id="message_thumbnail_width" name="message[thumbnail][width]" type="hidden" />
+                <input id="message_thumbnail_height" name="message[thumbnail][height]" type="hidden" />
+                
+                
+                <input id="message_image_url" name="message[image][url]" type="hidden" />
+                <input id="message_image_width" name="message[image][width]" type="hidden" />
+                <input id="message_image_height" name="message[image][height]" type="hidden" />
+                -->
+                <div class="field-group clearfix">
+                  <a href="#" id="cancel-submit-message">Cancel</a>
+                  <button data-disable-with="Publish" name="button" type="submit">Publish</button>
+                </div>
               
-              <p><strong>December 15th, 11:00 AM</strong></p>
-              <p><strong>Bhaskar Pandya Hall, Near Sandesh Press, Bodakdev, Ahmedabad</strong></p>
-              <p>&nbsp;</p>
-              <p><strong>Baraat:</strong>&nbsp;The groom sets out for the bride&rsquo;s home amidst much fanfare, with a procession of friends and family members following him, called the baraat.</p>
-              <p>&nbsp;</p>
-              <p><strong>Kanya Daan</strong>&nbsp;is where the parents hand over their beloved daughter&rsquo;s hand to the groom. The curtain between the bride and groom comes down and they exchange garlands. The bride&rsquo;s parents pray that their son-in-law will care, protect, and love their daughter throughout their life together.</p>
-              <p>&nbsp;</p>
-              <p><strong>Sapta phere</strong>, meaning &lsquo;seven steps&rsquo;. The bride and the groom circle around the sacred fire, reciting the seven sacred vows of marriage, considering the sacred fire or Agni as witness.&nbsp;By the end of the seventh vow, they are considered united as man and wife. The groom makes things official by tying a mangalsutra around his wife&rsquo;s neck and placing a streak of sindoor (red color) on her forehead.</p>
-              <p>&nbsp;</p>
-              <p>These ceremonies will be performed from 11 pm till 2 am.</p>
-              <p>&nbsp;</p>
-              <p><img alt="" src="https://d25uo7j7o9w973.cloudfront.net/uploads/story/561b0f8f366533001e3e0000/3c/01316080e711e58b3033a4cfbde69f/11412343_10205936915294060_7009705277673214230_n.jpg" style="height: 152px; width: 500px;" /></p>
+            </form>
+            <div id="guestbook-photo-preview"></div>
+          </div>
+          
+          <ul id="guestbook-messages" class="guestbook-message-list">
+          <?php
+
+            ini_set('display_errors', 'On');
+            error_reporting(E_ALL | E_STRICT);
+
+            $servername = "localhost";
+            $username = "root";
+            $password = "Apeksh@1";
+            $dbname = "wed";
+          >
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Krishna Goyal</div>
+                <div class="message-time">3 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Very Very big congratulations.</p>
+              </div>
+              
             </li>
-            
-            
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Sai Gowthami Asam</div>
+                <div class="message-time">3 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Dear Megha & Hardhik,</p>
+                <p>Hearty Congratulations to you both. </p>
+                <p>Wish you both a very very happy married life :). Enjoy!!</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Sekhar and family</div>
+                <div class="message-time">3 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Megha and Abhilekh,</p>
+                <p>Congratulations to both of you!Happy Wedding☺☺👫👍👏👏</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Anju Masi</div>
+                <div class="message-time">4 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Sorry will not be able to attend in person but our good wishes and blessing come to you all the same and we hope you have the best of everything in life. Congrats and lots of love to both of you.</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Zil</div>
+                <div class="message-time">4 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Many Many Congratulations to you both & your families..... I'm not sure whether I will be attending the wedding or not but lots of wishes, good luck and have a beautiful journey for life long called "MARRIAGE"</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Sunay</div>
+                <div class="message-time">4 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Congrats Bro!!</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Anand and Mansi</div>
+                <div class="message-time">4 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>So excited for you two! Remember the weddings are meant to be stressful but just live above that and enjoy it to the fullest!!! Best of luck in future ahead and hope to catch afterwards!!!</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Pooja</div>
+                <div class="message-time">4 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Congratulations dear..😊😊...you two look awsm together..wish you wonderful life ahead..</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Aarti (Pooja Modi&#39;s Sister)</div>
+                <div class="message-time">4 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Hey Dear, Congratulations and Enjoy new chapter of life...</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Pallav shah</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Heartily congrats to both of you.... Lovely couple and such a lovely website as well :-)</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Pakya.. :P</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Hearty congratulations to ya'll.. I wish I could make it for the wedding but all my good wishes!!!!</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Akshay Garg</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Heartiest congratulations to you both. You guys look like a perfect couple. Lovely website as well. Kudos!!</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Dushyant Patel</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Many congratulations on tying the knot! May this day be the just the beginning of a happy life together. Wish you both a prosperous future ahead.</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Nidhi &amp; Parin Shah</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Congratulations to the both of you! We wish you all the best in your married life. Love each other forever and let God be the center of your relationship.</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Mansi Shah</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Many Many Congratulations both of you....
+                  <br />Both of You compliment each other .....
+                <br />Wish you lots and lots of happiness and wish you a very happy married life......</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Vedang Shah</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Congratulations ! !:D Both of you look lovely and wonderful together. Wish you an amazing and a very happy life ahead.</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">dr nipesh patel</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Congratulations to both of you. Looking so cool togather.
+                <br />Prey for your best life ahead. God bless you</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Dylan and Ericka</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Congratulations!!!  You guys are a perfect pair :)</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Janani and Neeraj</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Heartiest congratulations both of you! You look perfect together. Love the website and all the pics are super cute! Wish u guys a very happy married life!</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Rishi</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Congratulations guys !! much love :D</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="message-information clearfix">
+                <div class="message-name">Shah</div>
+                <div class="message-time">5 months ago</div>
+              </div>
+              
+              <div class="message-note">
+                <p>Congrats!!!</p>
+              </div>
+              
+            </li>
           </ul>
         </div>
+        <div id="guestbook-bottom"></div>
       </div>
-    </div>    <div id="soundcloud">
-    <div id="soundcloud-widget-player"></div>
-  </div>
-  <div id="countdown" class="x-small noedit">
-    <div id="digits" class="clearfix">
-      <div id="digit1" class="number"></div>
-      <div id="digit2" class="number"></div>
-      <div id="digit3" class="number"></div>
-      <div id="digit4" class="number last"></div>
     </div>
-    <div id="countdown-qualifier"></div>
-    <div id="countdown-message">Our Wedding Day!</div>
+    <input id="locale" name="locale" type="hidden" />
   </div>
-  <div id="translator">
-    
-    <div id="MicrosoftTranslatorWidget" class="Dark" style="color:#ffffff; background-color:#555555"></div>
-  </div>
+</div>    <div id="soundcloud">
+<div id="soundcloud-widget-player"></div>
+</div>
+<div id="countdown" class="x-small noedit">
+<div id="digits" class="clearfix">
+  <div id="digit1" class="number"></div>
+  <div id="digit2" class="number"></div>
+  <div id="digit3" class="number"></div>
+  <div id="digit4" class="number last"></div>
+</div>
+<div id="countdown-qualifier"></div>
+<div id="countdown-message">Our Wedding Day!</div>
+</div>
+<div id="translator">
+
+<div id="MicrosoftTranslatorWidget" class="Dark" style="color:#ffffff; background-color:#555555"></div>
+</div>
 </div>
 <div class="backdrop"><div class="background"></div></div>
 <script src="http://www.abhilekhwedsmegha.com:8080/com.wed/js/homepage-39ff6d58a1d4dbfc08a320f100d5e27c.js"></script>

@@ -9,23 +9,23 @@ $username = "root";
 $password = "Apeksh@1";
 $dbname = "wed";
 
-if(!isset($_POST['name']))
+if(!isset($_POST['message_name']))
 {
     echo '
     <!DOCTYPE HTML>
     <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="1;url=http://www.abhilekhwedsmegha.com">
+        <meta http-equiv="refresh" content="1;url=http://www.abhilekhwedsmegha.com?red=1">
         <script type="text/javascript">
-            window.location.href = "http://www.abhilekhwedsmegha.com"
+            window.location.href = "http://www.abhilekhwedsmegha.com?red=1"
         </script>
         <title>Page Redirection</title>
     </head>
     <body>
         <p>This page does not exist</p>
         <p>You got to wrong page. If you are not redirected automatically, follow the 
-            <a href="http://www.abhilekhwedsmegha.com">link to main site</a>
+            <a href="http://www.abhilekhwedsmegha.com?red=1">link to main site</a>
             </p>
     </body>
     </hlml>';
@@ -35,11 +35,11 @@ if(!isset($_POST['name']))
 echo '<!DOCTYPE HTML>
 <html lang="en-US">';
 
-$myname = $_POST['name'];
-$mywishes = $_POST["wishes"];
+$myname = $_POST['message_name'];
+$mywishes = $_POST["message_note"];
 
 // Check file type
-
+/*
 $target_dir = "../../nginx/static/com.wed/upimg/";
 $target_base = "http://www.abhilekhwedsmegha.com:8080/com.wed/upimg/";
 $basenm = basename($_FILES["photo"]["name"]);
@@ -85,8 +85,9 @@ if($uploadOk == true && $imageFileType != "jpg" && $imageFileType != "png" && $i
 if ($uploadOk == false || !move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     $target_url = "";
 }
+*/
 
-$myphoto = $target_url;
+$myphoto = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
