@@ -4,39 +4,42 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ALL | E_STRICT);
 
-$servername = "localhost";
-$username = "root";
-$password = "Apeksh@1";
-$dbname = "wed";
 
-if(!isset($_POST['message_name']))
+
+if(!isset($_POST["message"]))
 {
-    echo '
-    <!DOCTYPE HTML>
-    <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="1;url=http://www.abhilekhwedsmegha.com?red=1">
-        <script type="text/javascript">
-            window.location.href = "http://www.abhilekhwedsmegha.com?red=1"
-        </script>
-        <title>Page Redirection</title>
-    </head>
-    <body>
-        <p>This page does not exist</p>
-        <p>You got to wrong page. If you are not redirected automatically, follow the 
-            <a href="http://www.abhilekhwedsmegha.com?red=1">link to main site</a>
-            </p>
-    </body>
-    </hlml>';
+    // echo '
+    // <!DOCTYPE HTML>
+    // <html lang="en-US">
+    // <head>
+    //     <meta charset="UTF-8">
+    //     <meta http-equiv="refresh" content="20;url=http://www.abhilekhwedsmegha.com?red=g1">
+    // <!--    <script type="text/javascript">
+    //         window.location.href = "http://www.abhilekhwedsmegha.com?red=g2"
+    //     </script> -->
+    //     <title>Page Redirection</title>
+    // </head>
+    // <body>
+    //     <p>This page does not exist</p>
+    //     <p>You got to wrong page. If you are not redirected automatically, follow the 
+    //         <a href="http://www.abhilekhwedsmegha.com?red=g3">link to main site</a>
+    //         </p>
+    // </body>
+    // </hlml>';
+    print_r($_POST);
     exit();
 }
 
 echo '<!DOCTYPE HTML>
 <html lang="en-US">';
 
-$myname = $_POST['message_name'];
-$mywishes = $_POST["message_note"];
+$servername = "localhost";
+$username = "root";
+$password = "Apeksh@1";
+$dbname = "wed";
+
+$myname = $_POST[message['name']];
+$mywishes = $_POST[message['note']];
 
 // Check file type
 /*
@@ -89,6 +92,12 @@ if ($uploadOk == false || !move_uploaded_file($_FILES["fileToUpload"]["tmp_name"
 
 $myphoto = "";
 
+if( ! ini_get('date.timezone') ){
+    date_default_timezone_set('Asia/Calcutta');
+}
+
+$idate = date("Y-m-d h:i:sa");
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -96,15 +105,15 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "INSERT INTO wishes (name, wishes, photo) VALUES ('$myname', '$mywishes', '$myphoto')";
+$sql = "INSERT INTO guestbook (idate, name, wishes, photo) VALUES ('$idate', '$myname', '$mywishes', '$myphoto')";
 
 if ($conn->query($sql) === TRUE) {
     echo '  
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="1;url=http://www.abhilekhwedsmegha.com/guestbook/index.php?re=1">
+        <meta http-equiv="refresh" content="1;url=http://www.abhilekhwedsmegha.com/guestbook/index.php?re=g1">
         <script type="text/javascript">
-            window.location.href = "http://www.abhilekhwedsmegha.com/guestbook/index.php?re=1"
+            window.location.href = "http://www.abhilekhwedsmegha.com/guestbook/index.php?re=g2"
         </script>
         <title>Page Redirection</title>
     </head>
@@ -112,7 +121,7 @@ if ($conn->query($sql) === TRUE) {
         <p>Data updated successfully</p>
         <p> Your entry is well received. We really appreciate your good wishes.</p>
         <p> If you are not redirected automatically, follow the 
-            <a href="http://www.abhilekhwedsmegha.com/guestbook/index.php?re=1">link to guestbook</a>
+            <a href="http://www.abhilekhwedsmegha.com/guestbook/index.php?re=g3">link to guestbook</a>
         </p>
     </body>';
 } else {

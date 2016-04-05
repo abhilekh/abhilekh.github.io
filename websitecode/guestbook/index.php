@@ -154,7 +154,7 @@
             <a data-pjax="" href="../our-story/index.html">Our Story</a>
           </li>
           <li>
-            <a data-pjax="" href="../roka/index.html">Engagement</a>
+            <a data-pjax="" href="../roka/index.html">Roka</a>
           </li>
           <li>
             <a data-pjax="" href="../events/index.html">Events</a>
@@ -197,7 +197,25 @@
             <div id="guestbook-top"></div>
             <div id="guestbook-middle">
               <div id="guestbook-header" class="clearfix">
-                <div id="message-count">21 messages</div>
+                <?php
+                  ini_set('display_errors', 'On');
+                  error_reporting(E_ALL | E_STRICT);
+
+                  $servername = "localhost";
+                  $username = "root";
+                  $password = "Apeksh@1";
+                  $dbname = "wed";
+
+                  // Create connection
+                  $conn = new mysqli($servername, $username, $password, $dbname);
+                  // Check connection
+                  if ($conn->connect_error) {
+                      die("Connection failed: " . $conn->connect_error);
+                  } 
+                  $sql = "SELECT * FROM guestbook ORDER BY id desc";
+                  $result = $conn->query($sql);
+                  echo '<div id="message-count">' . $result->num_rows . ' messages </div>';
+                ?>
                 <div id="add-message"><a href="#" id="add-message-link">Post a message</a></div>
               </div>
               
@@ -263,7 +281,7 @@
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             } 
-            $sql = "SELECT * FROM wishes";
+            $sql = "SELECT * FROM guestbook ORDER BY id desc";
 
             $result = $conn->query($sql);
 
@@ -279,17 +297,34 @@
 
             $postall = '</p></div></li>';
 
-            $currentdt = new DateTime('2012-09-11 10:25:00');
+            if( ! ini_get('date.timezone') ){
+                date_default_timezone_set('Asia/Calcutta');
+            }
+
+            $currentdt = new DateTime(date("Y-m-d h:i:sa"));
 
             if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
-                  $start_date = new DateTime($row["d"]);
-                  $since_start = $start_date->diff($currentdt);
-                  echo $prename . $row["name"] . $pretime . "3 months ago" . $premessage . $row["wishes"] . $postall;
+                  $start_date = new DateTime($row["idate"]);
+                  $since = $start_date->diff($currentdt);
+                  if ($since->y > 0){
+                    $since_str = $since->y . " year ago";
+                  }else if ($since->m > 0) {
+                    $since_str = $since->m . " months ago";
+                  }else if ($since->d > 0) {
+                    $since_str = $since->d . " days ago";
+                  }else if ($since->h > 0) {
+                    $since_str = $since->h . " hours ago";
+                  }else if ($since->i > 0) {
+                    $since_str = $since->i . " minutes ago";
+                  } else {
+                    $since_str = $since->s . " seconds ago";
+                  }
+                  echo $prename . $row["name"] . $pretime . $since_str . $premessage . $row["wishes"] . $postall;
                 }
             } else {
-                echo "0 results";
+                echo "Nice wishes";
             }
 
           ?>
@@ -325,12 +360,12 @@ new BackgroundImage("http://www.abhilekhwedsmegha.com:8080/com.wed/img/main01.jp
 </script>
 
 <script>
-$('#soundcloud').fadeIn().css({top: "767px", left: "-140.5px"});
+$('#soundcloud').fadeIn().css({top: "80vh", left: "5vw"});
 
 SoundCloud.init(false, {soundcloudUrl: "https://soundcloud.com/poolkeshi/sets/wedding2015_playlist", soundcloudWidth: "200", soundcloudHeight: "80", soundcloudAutoplay: "true", soundcloudArtwork: "false", soundcloudColor: "ff5500"});
 </script>
 <script>
-$('#countdown').fadeIn().css({top: "572px", left: "-139.5px"});
+$('#countdown').fadeIn().css({top: "60vh", left: "5vw"});
 Countdown.init("April 20, 2016", false);
 </script>
 
