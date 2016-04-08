@@ -38,8 +38,9 @@ $username = "root";
 $password = "Apeksh@1";
 $dbname = "wed";
 
-$myname = $_POST[message['name']];
-$mywishes = $_POST[message['note']];
+$msg = $_POST["message"];
+$myname = $msg['name'];
+$mywishes = $msg['note'];
 
 // Check file type
 /*
@@ -96,7 +97,9 @@ if( ! ini_get('date.timezone') ){
     date_default_timezone_set('Asia/Calcutta');
 }
 
-$idate = date("Y-m-d h:i:sa");
+$idate = date("Y-m-d H:i:s");
+
+echo $idate;
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

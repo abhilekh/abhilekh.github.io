@@ -3,149 +3,131 @@
 <!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head prefix="og: http://ogp.me/ns#">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"7c24439aad","applicationID":"1660434","transactionName":"cQxYTURcCgpXRh0ODl8GRlhRVkkJR0ZtFRVdEU8=","queueTime":21,"applicationTime":140,"agent":""}</script>
-  <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(e,t){function n(){}function r(e){function t(e){return e&&e instanceof n?e:e?a(e,i,o):o()}function s(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,f=0;u>f;f++)a[f].apply(i,r);var s=c[w[n]];return s&&s.push([h,n,r,i]),i}function p(e,t){g[e]=l(e).concat(t)}function l(e){return g[e]||[]}function d(e){return f[e]=f[e]||r(s)}function v(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in c||(c[t]=[])})}var g={},w={},h={on:p,emit:s,get:d,listeners:l,context:t,buffer:v};return h}function o(){return new n}var i="nr@context",a=e("gos"),u=e(1),c={},f={},s=t.exports=r();s.backlog=c},{1:12,gos:"7eSDFh"}],ee:[function(e,t){t.exports=e("QJf3ax")},{}],3:[function(e,t){function n(e,t){return function(){r(e,[(new Date).getTime()].concat(i(arguments)),null,t)}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],u=["addPageAction"],c="api-";o(a,function(e,t){newrelic[t]=n(c+t,"api")}),o(u,function(e,t){newrelic[t]=n(c+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),r("err",[e,(new Date).getTime()])}},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,t){t.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,t){function n(e,t,n){if(r.call(e,t))return e[t];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[t]=o,o}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],handle:[function(e,t){t.exports=e("D5DuLP")},{}],D5DuLP:[function(e,t){function n(e,t,n,o){r.buffer([e],o),r.emit(e,t,n)}var r=e("ee").get("handle");t.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(e,t){function n(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");t.exports=n},{gos:"7eSDFh"}],id:[function(e,t){t.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,t){function n(){if(!v++){var e=d.info=NREUM.info,t=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){u(p,function(t,n){e[t]||(e[t]=n)});var n="https"===s.split(":")[0]||e.sslForHttp;d.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=d.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=e("handle"),u=e(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),d=t.exports={offset:i(),origin:s,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,t){t.exports=e("G9z0Bl")},{}],12:[function(e,t){function n(e,t){var n=[],o="",i=0;for(o in e)r.call(e,o)&&(n[i]=t(o,e[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],13:[function(e,t){function n(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=n},{}]},{},["G9z0Bl"]);</script>
-  
-  <link rel="shortcut icon" href="http://www.abhilekhwedsmegha.com:8080/com.wed/img/sicon.jpg">
-  <link rel="apple-touch-icon" href="http://www.abhilekhwedsmegha.com:8080/com.wed/img/aicon.jpg">
-  
-  
-  <meta property="og:image" content="http://www.abhilekhwedsmegha.com:8080/com.wed/img/icon.jpg">
-  <meta property="og:image:width" content="203">
-  <meta property="og:image:height" content="191">
-  <meta property="og:image" content="http://www.abhilekhwedsmegha.com:8080/com.wed/img/main01.jpg">
-  
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Megha & Abhilekh">
-  
-  
-  <title>Our Story | Megha & Abhilekh</title>
-  
-  <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/css/boilerplate-575e10db077c81a27280c0aa364115df.css" media="screen, print" rel="stylesheet" />
-  <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/css/homepage-9b861d789ae483153981774b446dae61.css" media="screen, print" rel="stylesheet" />
-  
-  
-  <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/great-vibes-3a91f028bf0dfd5a06a38b258f95cc85.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/blackjack-3e26031b587dd04e8e736a8a61814ca7.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/trashhand-80dcc0893fa44091f2b881cfb9f81869.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/harabara-hand-a0150dcaf5e93c855d56d5f73b670321.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/amatic-d0624e461f58eabf18047d4d04769e0e.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/source-sans-pro-104da4846d33711d33587a3d4fe45826.css" media="screen" rel="stylesheet" type="text/css" />
-  
-  <style type="text/css" media="screen">
-  #control_color_backdrop { background-color: #eaecf0; }
-  #control_color_background_about { background-color: #000000; }
-  #control_color_background_navi { background-color: #000000; }
-  #control_color_background_content { background-color: #000000; }
-  #control_color_text_about_name { background-color: #16c716; }
-  #control_color_text_about_date { background-color: #f5f507; }
-  #control_color_text_about_location { background-color: #496cf5; }
-  #control_color_text_about_message { background-color: #faf7fa; }
-  #control_color_text_navigation_links { background-color: #ffffff; }
-  #control_color_text_content { background-color: #FFFFFF; }
-  #control_color_text_headers { background-color: #90f1f5; }
-  #control_color_text_links { background-color: #fafafa; }
-  #about { background: rgba(0,0,0,0.0); }
-  #navi { background: rgba(0,0,0,0.26); }
-  #content { background: rgba(0,0,0,0.51); }
-  .backdrop { background: #eaecf0; }
-  #dashboard-macbookair-overlay, #dashboard-ipadmini-overlay, #layouts-mobile-wrap { background: #eaecf0; }
-  #about_name { color: #16c716; }
-  #about_date { color: #f5f507; }
-  #about_location { color: #496cf5; }
-  #about_message { color: #faf7fa; }
-  #content { color: #FFFFFF; }
-  #container a, #container a:visited, #container a:active, #container a:hover { color: #fafafa; }
-  #navigation_links li a, #navigation_links li a:visited, #navigation_links li a:active, #navigation_links li a:hover { color: #ffffff; }
-  #content h1 { color: #90f1f5; }
-  #content h2 { color: #90f1f5; }
-  #content h3 { color: #90f1f5; }
-  #about_name { font-size: 76px; }
-  #about_date { font-size: 45px; }
-  #about_location { font-size: 47px; }
-  #about_message { font-size: 35px; }
-  #content { font-size: 17px; }
-  #navigation_links { font-size: 30px; }
-  #content h1 { font-size: 32px; }
-  #content h2 { font-size: 26px; }
-  #content h3 { font-size: 19px; }
-  #about_name { font-family: 'Great Vibes'; }
-  #about_date { font-family: 'Blackjack'; }
-  #about_location { font-family: 'Trashhand'; }
-  #about_message { font-family: 'Harabara Hand'; }
-  #navigation_links { font-family: 'Amatic'; }
-  #content { font-family: 'Source Sans Pro'; }
-  #content h1 { font-family: 'Harabara Hand'; }
-  #content h2 { font-family: 'Blackjack'; }
-  #content h3 { font-family: 'Blackjack'; }
-  #content h1 { text-align: center; }
-  #content h2 { text-align: center; }
-  #about_date { text-transform: capitalize; }
-  
-  
-  #content #rsvp #rsvp-form #rsvp-content {
-  background-color: #ffffff;
-  color: #000000;
-  border-radius: 4px;
-  }
-  
-  #content #rsvp #rsvp-form {
-  background-color: #ffffff;
-  border-radius: 4px;
-  padding: 14px;
-  }
-  #content #rsvp #rsvp-form { background-image: url(http://www.abhilekhwedsmegha.com:8080/com.wed/img/mail-stripes-f45d2824a12e02f7f5d163801a3fc4ef.png); }
-  #content #rsvp #rsvp-form #rsvp-content #rsvp-heading #rsvp-couple #rsvp-names {
-  color: #000000;
-  font-size: 24px;
-  }
-  #content #rsvp #rsvp-form #rsvp-content #rsvp-heading #rsvp-couple #rsvp-date {
-  color: #000000;
-  font-size: 18px;
-  }
-  
-  #content #rsvp #rsvp-form #rsvp-content ul#rsvp-fields-form > li.field-display label.field-label-display {
-  color: #000000;
-  font-size: 16px;
-  }
-  #content #rsvp #rsvp-form #rsvp-content ul#rsvp-fields-form > li.field-display label.field-display-choice {
-  color: #000000;
-  font-size: 16px;
-  }
-  
-  #content #rsvp #rsvp-form #rsvp-content ul#rsvp-fields-form button[type="submit"] {
-  background: #6d97cc;
-  color: #FFFFFF;
-  font-size: 14px;
-  border-radius: 4px;
-  }
-  
-  </style>
-  
-  <!--[if lte IE 8]>
-  <style type="text/css" media="screen">
-  #about { -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#00000000', EndColorStr='#00000000')"; filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#00000000', EndColorStr='#00000000'); zoom: 1!important; }
-  #navi { -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#42000000', EndColorStr='#42000000')"; filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#42000000', EndColorStr='#42000000'); zoom: 1!important; }
-  #content { -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#82000000', EndColorStr='#82000000')"; filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#82000000', EndColorStr='#82000000'); zoom: 1!important; }
-  </style>
-  <![endif]-->
-  
-  <meta content="authenticity_token" name="csrf-param" />
-  <meta content="xNw8qXQllR650tFEFKwEBew2l1YQOS78CUSpuHXw4Gc=" name="csrf-token" />
-  <script src="http://www.abhilekhwedsmegha.com:8080/com.wed/js/modernizr-948cc2b81593b0a510e5f13feaa85995.js"></script>
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-37150574-1']);
-  _gaq.push(['_setDomainName', 'abhilekhwedsmegha.com']);
-  _gaq.push(['_trackPageview']);
-  </script>
-</head>
-<body data-sticky-links="false">
-  <div id="container">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"7c24439aad","applicationID":"1660434","transactionName":"cQxYTURcCgpXRh0ODl8GRlhRVkkJR0ZtFRVdEU8=","queueTime":21,"applicationTime":140,"agent":""}</script>
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(e,t){function n(){}function r(e){function t(e){return e&&e instanceof n?e:e?a(e,i,o):o()}function s(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,f=0;u>f;f++)a[f].apply(i,r);var s=c[w[n]];return s&&s.push([h,n,r,i]),i}function p(e,t){g[e]=l(e).concat(t)}function l(e){return g[e]||[]}function d(e){return f[e]=f[e]||r(s)}function v(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in c||(c[t]=[])})}var g={},w={},h={on:p,emit:s,get:d,listeners:l,context:t,buffer:v};return h}function o(){return new n}var i="nr@context",a=e("gos"),u=e(1),c={},f={},s=t.exports=r();s.backlog=c},{1:12,gos:"7eSDFh"}],ee:[function(e,t){t.exports=e("QJf3ax")},{}],3:[function(e,t){function n(e,t){return function(){r(e,[(new Date).getTime()].concat(i(arguments)),null,t)}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],u=["addPageAction"],c="api-";o(a,function(e,t){newrelic[t]=n(c+t,"api")}),o(u,function(e,t){newrelic[t]=n(c+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),r("err",[e,(new Date).getTime()])}},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,t){t.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,t){function n(e,t,n){if(r.call(e,t))return e[t];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[t]=o,o}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],handle:[function(e,t){t.exports=e("D5DuLP")},{}],D5DuLP:[function(e,t){function n(e,t,n,o){r.buffer([e],o),r.emit(e,t,n)}var r=e("ee").get("handle");t.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(e,t){function n(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");t.exports=n},{gos:"7eSDFh"}],id:[function(e,t){t.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,t){function n(){if(!v++){var e=d.info=NREUM.info,t=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){u(p,function(t,n){e[t]||(e[t]=n)});var n="https"===s.split(":")[0]||e.sslForHttp;d.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=d.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=e("handle"),u=e(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),d=t.exports={offset:i(),origin:s,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,t){t.exports=e("G9z0Bl")},{}],12:[function(e,t){function n(e,t){var n=[],o="",i=0;for(o in e)r.call(e,o)&&(n[i]=t(o,e[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],13:[function(e,t){function n(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=n},{}]},{},["G9z0Bl"]);</script>
+    <link rel="shortcut icon" href="http://www.abhilekhwedsmegha.com:8080/com.wed/img/sicon.jpg">
+    <link rel="apple-touch-icon" href="http://www.abhilekhwedsmegha.com:8080/com.wed/img/aicon.jpg">
+    <meta property="og:image" content="http://www.abhilekhwedsmegha.com:8080/com.wed/img/icon.jpg">
+    <meta property="og:image:width" content="203">
+    <meta property="og:image:height" content="191">
+    <meta property="og:image" content="http://www.abhilekhwedsmegha.com:8080/com.wed/img/main01.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Megha & Abhilekh">
+    <title>Our Story | Megha & Abhilekh</title>
+    <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/css/boilerplate-575e10db077c81a27280c0aa364115df.css" media="screen, print" rel="stylesheet" />
+    <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/css/homepage-9b861d789ae483153981774b446dae61.css" media="screen, print" rel="stylesheet" />
+    <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/great-vibes-3a91f028bf0dfd5a06a38b258f95cc85.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/blackjack-3e26031b587dd04e8e736a8a61814ca7.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/trashhand-80dcc0893fa44091f2b881cfb9f81869.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/harabara-hand-a0150dcaf5e93c855d56d5f73b670321.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/amatic-d0624e461f58eabf18047d4d04769e0e.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="http://www.abhilekhwedsmegha.com:8080/com.wed/font/source-sans-pro-104da4846d33711d33587a3d4fe45826.css" media="screen" rel="stylesheet" type="text/css" />
+    <style type="text/css" media="screen">
+      #control_color_backdrop { background-color: #eaecf0; }
+      #control_color_background_about { background-color: #000000; }
+      #control_color_background_navi { background-color: #000000; }
+      #control_color_background_content { background-color: #000000; }
+      #control_color_text_about_name { background-color: #16c716; }
+      #control_color_text_about_date { background-color: #f5f507; }
+      #control_color_text_about_location { background-color: #496cf5; }
+      #control_color_text_about_message { background-color: #faf7fa; }
+      #control_color_text_navigation_links { background-color: #ffffff; }
+      #control_color_text_content { background-color: #FFFFFF; }
+      #control_color_text_headers { background-color: #90f1f5; }
+      #control_color_text_links { background-color: #fafafa; }
+      #about { background: rgba(0,0,0,0.0); }
+      #navi { background: rgba(0,0,0,0.26); }
+      #content { background: rgba(0,0,0,0.51); }
+      .backdrop { background: #eaecf0; }
+      #dashboard-macbookair-overlay, #dashboard-ipadmini-overlay, #layouts-mobile-wrap { background: #eaecf0; }
+      #about_name { color: #16c716; }
+      #about_date { color: #f5f507; }
+      #about_location { color: #496cf5; }
+      #about_message { color: #faf7fa; }
+      #content { color: #FFFFFF; }
+      #container a, #container a:visited, #container a:active, #container a:hover { color: #fafafa; }
+      #navigation_links li a, #navigation_links li a:visited, #navigation_links li a:active, #navigation_links li a:hover { color: #ffffff; }
+      #content h1 { color: #90f1f5; }
+      #content h2 { color: #90f1f5; }
+      #content h3 { color: #90f1f5; }
+      #about_name { font-size: 76px; }
+      #about_date { font-size: 45px; }
+      #about_location { font-size: 47px; }
+      #about_message { font-size: 35px; }
+      #content { font-size: 17px; }
+      #navigation_links { font-size: 30px; }
+      #content h1 { font-size: 32px; }
+      #content h2 { font-size: 26px; }
+      #content h3 { font-size: 19px; }
+      #about_name { font-family: 'Great Vibes'; }
+      #about_date { font-family: 'Blackjack'; }
+      #about_location { font-family: 'Trashhand'; }
+      #about_message { font-family: 'Harabara Hand'; }
+      #navigation_links { font-family: 'Amatic'; }
+      #content { font-family: 'Source Sans Pro'; }
+      #content h1 { font-family: 'Harabara Hand'; }
+      #content h2 { font-family: 'Blackjack'; }
+      #content h3 { font-family: 'Blackjack'; }
+      #content h1 { text-align: center; }
+      #content h2 { text-align: center; }
+      #about_date { text-transform: capitalize; }
+      #content #rsvp #rsvp-form #rsvp-content {
+      background-color: #ffffff;
+      color: #000000;
+      border-radius: 4px;
+      }
+      #content #rsvp #rsvp-form {
+      background-color: #ffffff;
+      border-radius: 4px;
+      padding: 14px;
+      }
+      #content #rsvp #rsvp-form { background-image: url(http://www.abhilekhwedsmegha.com:8080/com.wed/img/mail-stripes.png); }
+      #content #rsvp #rsvp-form #rsvp-content #rsvp-heading #rsvp-couple #rsvp-names {
+      color: #000000;
+      font-size: 24px;
+      }
+      #content #rsvp #rsvp-form #rsvp-content #rsvp-heading #rsvp-couple #rsvp-date {
+      color: #000000;
+      font-size: 18px;
+      }
+      #content #rsvp #rsvp-form #rsvp-content ul#rsvp-fields-form > li.field-display label.field-label-display {
+      color: #000000;
+      font-size: 16px;
+      }
+      #content #rsvp #rsvp-form #rsvp-content ul#rsvp-fields-form > li.field-display label.field-display-choice {
+      color: #000000;
+      font-size: 16px;
+      }
+      #content #rsvp #rsvp-form #rsvp-content ul#rsvp-fields-form button[type="submit"] {
+      background: #6d97cc;
+      color: #FFFFFF;
+      font-size: 14px;
+      border-radius: 4px;
+      }
+    </style>
+    <!--[if lte IE 8]>
+    <style type="text/css" media="screen">
+      #about { -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#00000000', EndColorStr='#00000000')"; filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#00000000', EndColorStr='#00000000'); zoom: 1!important; }
+      #navi { -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#42000000', EndColorStr='#42000000')"; filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#42000000', EndColorStr='#42000000'); zoom: 1!important; }
+      #content { -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#82000000', EndColorStr='#82000000')"; filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#82000000', EndColorStr='#82000000'); zoom: 1!important; }
+    </style>
+    <![endif]-->
+    <meta content="authenticity_token" name="csrf-param" />
+    <meta content="xNw8qXQllR650tFEFKwEBew2l1YQOS78CUSpuHXw4Gc=" name="csrf-token" />
+    <script src="http://www.abhilekhwedsmegha.com:8080/com.wed/js/modernizr-948cc2b81593b0a510e5f13feaa85995.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37150574-1']);
+      _gaq.push(['_setDomainName', 'abhilekhwedsmegha.com']);
+      _gaq.push(['_trackPageview']);
+    </script>
+  </head>
+  <body data-sticky-links="false">
+    <div id="container">
     <div id="choice-5" class="clearfix">
       <div id="navi">
         <ul id="navigation_links">
@@ -171,24 +153,26 @@
           <li>
             <a data-pjax="" href="../guestbook/index.php">Guestbook</a>
           </li>
-          <li>
+          <!--<li>
             <a data-pjax="" href="../family/index.html">Family</a>
-          </li>
+          </li>-->
         </ul>
       </div>
       <div id="about">
         <h1 id="about_name"><span id="about_bride_name">Megha</span> <span id="about_names_link">&amp;</span> <span id="about_groom_name">Abhilekh</span></h1>
         <h2 id="about_date">April 20, 2016</h2>
         <h3 id="about_location">Ajmer, India</h3>
-        <div id="about_message" style="display:none"><p><strong>#abhilekhwedsmegha</strong></p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p></div>
+        <div id="about_message" style="display:none">
+          <p><strong>#abhilekhwedsmegha</strong></p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
       </div>
       <div id="content" data-pjax-container>
-        <div id="our-story">
+        <div id="about-us">
           <h1>About Culprits</h1>
           <h2>1st Culprit: Abhilekh</h2>
-          <p>Hobbies:</p>
+          <p>His hobbies:</p>
           <li> Singing & Dancing </li>
           <li> Camping </li>
           <li> Going on long, speedy drive </li>
@@ -196,15 +180,24 @@
           <li> Watching Movies </li>
           <p>&nbsp;</p>
           <p>Why Megha: "I felt she was able to understand me, and accept the cynical part of me as well"</p>
+          <p>For further information 
+            <a href="http://www.idiva.com/news-relationships/11-reasons-why-marwari-girls-make-the-best-girlfriends-ever/15111628">why I should marry a marwari girl</a>
+          </p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
           <h2>2nd Culprit: Megha</h2>
-          <p>Hobbies:</p>
-          <li> Singing & Dancing </li>
-          <li> Camping </li>
-          <li> Going on long, speedy drive </li>
-          <li> Playing vollyball & ping-pong </li>
-          <li> Watching Movies </li>
+          <p>Her hobbies:</p>
+          <li> Long Drive </li>
+          <li> Cooking </li>
+          <li> Listen to People </li>
+          <li> Born to explore </li>
           <p>&nbsp;</p>
-          <p>Why Megha: "I felt she was able to understand me, and accept the cynical part of me as well"</p>
+          <p>Why Abhilekh: "Intelligent and outgoing, He believes in simplicity!"<br/>
+            He is calculative by nature in all terms- Be it in walking, eating, sleeping or working!<br/>Apple of eye for his family, he is one 'full of life' person! Tujhme rab dsikhta hai hai yaara me kya karu
+          </p>
+          <p>Also on simple internet search I got on 
+            <a href="http://theviralvent.com/10-awesome-reasons-why-lucknow-guys-are-an-ideal-groom/">why I should marry a lucknow guy</a>
+          </p>
         </div>
         <div id="our-story">
           <h1>Our Story</h1>
@@ -213,110 +206,57 @@
               <h2>How we met...</h2>
               <h3>Wait lets begin with when we were born</h3>
               <p>The year was 19**. You can guess the year because both were born same yr only 5 days apart...</p>
+              <p>We met through our parents. It wasn't that we got on in first meet, but things slowly went on. We both were cautious of things early on but slowly they started making sense. Rest all as we say is history.</p>
               <p>&nbsp;</p>
-              <li>
-                <h3><em>How are we same...</em></h3>
-                <p> - Okay, So recalling our first date, do you think I made a good impression?</p>
-                <p>P - Hmmm, kind of....you were fun to talk to, explained some mumbo jumbo about your work among other things, and had a striking laughter but....uuugghhh that&nbsp;t-shirt</p>
-                <p>&nbsp;</p>
-                <p>H - ha ha, you are never gonna let go of it....for the record my wardrobe got a complete makeover and I had to bid adieu to some of my favorite tees coz of you</p>
-                <p>P - Sure you needed to, but coming back to the point, time just flew by on our first date and I enjoyed winning our bowling game</p>
-                <p>&nbsp;</p>
-                <p>H - You so did not!! as my memory serves me well. But wait a minute, so you weren&#39;t listening to such a detailed and insightful explanation of my work?</p>
-                <p>P - If it helps I can now explain Subsea Engineering to anyone....</p>
-                <p>&nbsp;</p>
-                <p>H - Smh..(she still finds this acronym weird!)</p>
-                <p>P - Ofcourse! How do you type an action phrase (of shaking my head), that too as an acronym</p>
-                <p>&nbsp;</p>
-                <p>H - Okay, okay.....I have by now duly acknowledged all your&nbsp;idiosyncrasies including your specified way of English usage :P</p>
-                <p>P - So lets move on with the story....You never told me of your first impression about me?</p>
-                <p>&nbsp;</p>
-                <p>H - Someone who has a great sense of humor, is passionate about music, but could care less about knowing the guy she was talking to!!</p>
-                <p>P - Hey, I did show interest......later on, and look where it led us :)</p>
-                <p>&nbsp;</p>
-                <p><em>Second Date</em></p>
-                <p>P - Remember the highlight of this date?</p>
-                <p>H - Of course the awesome music band performance.....</p>
-                <p>&nbsp;</p>
-                <p>P - Let me do the honors of correcting you. While coming back from the show, when we approached your car, you walked to the passenger side door and conveniently unfolded the rear view mirror.....and while making your way back to the driver&#39;s side, you finally realized to open the door for me &amp; with a wide grin said, &quot;I am actually not that bad&quot;</p>
-                <p>H - Hey but that did bring a big smile on your face.</p>
-                <p>&nbsp;</p>
-                <p>P - I have to admit, it did :D</p>
-                <p>H - See it takes quite a lot of quirkiness to impress another quirky being! :D</p>
-                <p>&nbsp;</p>
-                <p>P- Touch&eacute;</p>
-                <p>H - So, I think we probably should be cutting our story short here for the sake of our gracious readers who have already got a good glimpse...</p>
-                <p>&nbsp;</p>
-              </li>
-              <li class="clearfix">
-                <h2>To be Mr</h2>
-                <p>Life is what happens when you are busy planning other things. And that is exactly how it happened. While I was busy making plans to move out of Houston for a change, he swooped right in my life and I am gladly stuck in this city for the perfect reason!</p>
-                <p>I enjoyed his company but a distinct memory where he indeed struck a chord of my heart was when I fell sick and while chatting with him one evening casually mentioned that and&nbsp;even&nbsp;without &nbsp;me asking, he was at my doorstep an hour later with dinner and medicines!!</p>
-                <p>His calmness and maturity brings the much needed balance in my hyper personality. And he still manages to be equally funny despite being responsible.</p>
-                <p>&nbsp;</p>
-                <p>And although he does operate on Pacific Time Zone living in Texas! :D, I am so looking forward to sharing life&#39;s adventures with him.</p>
-              </li>
-              <li class="clearfix">
-                <h2>To be Mrs</h2>
-                <p>I was enjoying my bachelorhood thinking my life couldn&#39;t be better, until I met her and realized what I was missing. What started off as conversations about everything except dating, slowly but surely turned into something that would last a lifetime and beyond!</p>
-                <p>Her genuineness, kindness, honesty, caring, creativity, curiosity, drive for knowledge, innocence, quirkiness, brings out the best in me.</p>
-                <p>&nbsp;</p>
-                <p>I can truly say I have found my &#39;partner in crime&#39; in her...for this life, and next! &nbsp;&nbsp;</p>
-                <p>&nbsp;</p>
-              </li>
-              <li class="clearfix">
-                <h2>About the Couple</h2>
-                <p>Our couple hails from &quot;Apnu Amdavad&quot; and like very true gujjus are big foodies. They both grew up in the city of Ahmedabad in Gujarat, India. While Abhilekh set foot in US quite early and made Houston his home during his high school years,destiny brought Megha to Austin, TX in the year 2010 for Masters in Engineering and later on to Houston, TX for work.</p>
-                <p>Even though they lived in the same city for 16 years and went to the same high school, they never meet until fate decided to intervene in 2014!</p>
-                <p>They both share their passions for music, travelling and sports.&nbsp;</p>
-              </li>
-            </ul>
-          </div>
+            <li class="clearfix">
+              <h2>About the Couple</h2>
+              <p>We hail from "UP & Rajasthan". Abhilekh grew up in the city of Nawabs, yup we are discussing about Lucknow in UP, on the other hand Megha was born in Bundi in Rajsthan but brought up for larger part of her early life in Kishangah(Maternal's Place) in Rajsthan. Abhilekh set foot in US for his Masters for the beginning of his dreams and made Santa Clara as his city of dreams as he founded his company "Cube26(formally Predictgaze) there with two of his friends. Soon he came back to Delhi, where destiny brought Megha to Gurgaon, Haryana in the year 2015 for her career growth. It was there where both of us met first time. Megha never knew that the boost in career by changing a job and city will give her better half.</p>
+              <p>They both share their passions for music, travelling, food and sports. And now lot of common friends including those at Cube26..&nbsp;</p>
+            </li>
+          </ul>
         </div>
-      </div>    <div id="soundcloud">
-      <div id="soundcloud-widget-player"></div>
-    </div>
-    <div id="countdown" class="x-small noedit">
-      <div id="digits" class="clearfix">
-        <div id="digit1" class="number"></div>
-        <div id="digit2" class="number"></div>
-        <div id="digit3" class="number"></div>
-        <div id="digit4" class="number last"></div>
       </div>
-      <div id="countdown-qualifier"></div>
-      <div id="countdown-message">Our Wedding Day!</div>
+      <div id="soundcloud">
+        <div id="soundcloud-widget-player"></div>
+      </div>
+      <div id="countdown" class="x-small noedit">
+        <div id="digits" class="clearfix">
+          <div id="digit1" class="number"></div>
+          <div id="digit2" class="number"></div>
+          <div id="digit3" class="number"></div>
+          <div id="digit4" class="number last"></div>
+        </div>
+        <div id="countdown-qualifier"></div>
+        <div id="countdown-message">Our Wedding Day!</div>
+      </div>
+      <div id="translator">
+        <div id="MicrosoftTranslatorWidget" class="Dark" style="color:#ffffff; background-color:#555555"></div>
+      </div>
     </div>
-    <div id="translator">
+    <div class="backdrop">
+      <div class="background"></div>
+    </div>
+    <script src="http://www.abhilekhwedsmegha.com:8080/com.wed/js/homepage-39ff6d58a1d4dbfc08a320f100d5e27c.js"></script>
+    <script>
+      new BackgroundImage("http://www.abhilekhwedsmegha.com:8080/com.wed/img/main01.jpg", "http://www.abhilekhwedsmegha.com:8080/com.wed/img/main01.jpg", {horizontal: "center", vertical: "top", scaling: "fill"}).loadBackground();
+    </script>
+    <script>
+      $('#soundcloud').fadeIn().css({top: "80vh", left: "5vw"});
       
-      <div id="MicrosoftTranslatorWidget" class="Dark" style="color:#ffffff; background-color:#555555"></div>
-    </div>
-  </div>
-  <div class="backdrop"><div class="background"></div></div>
-  <script src="http://www.abhilekhwedsmegha.com:8080/com.wed/js/homepage-39ff6d58a1d4dbfc08a320f100d5e27c.js"></script>
-  <script>
-  new BackgroundImage("http://www.abhilekhwedsmegha.com:8080/com.wed/img/main01.jpg", "http://www.abhilekhwedsmegha.com:8080/com.wed/img/main01.jpg", {horizontal: "center", vertical: "top", scaling: "fill"}).loadBackground();
-  </script>
-  
-  <script>
-  $('#soundcloud').fadeIn().css({top: "80vh", left: "5vw"});
-  
-  SoundCloud.init(false, {soundcloudUrl: "https://soundcloud.com/poolkeshi/sets/wedding2015_playlist", soundcloudWidth: "200", soundcloudHeight: "80", soundcloudAutoplay: "true", soundcloudArtwork: "false", soundcloudColor: "ff5500"});
-  </script>
-  <script>
-  $('#countdown').fadeIn().css({top: "60vh", left: "5vw"});
-  Countdown.init("April 20, 2016", false);
-  </script>
-  
-  
-  
-  <script type="text/javascript">
-  (function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  </script>
-  <script type="text/javascript" src="http://assets.transloadit.com/js/jquery.transloadit2-v2-latest.js"></script>
-</body>
+      SoundCloud.init(false, {soundcloudUrl: "https://soundcloud.com/poolkeshi/sets/wedding2015_playlist", soundcloudWidth: "200", soundcloudHeight: "80", soundcloudAutoplay: "true", soundcloudArtwork: "false", soundcloudColor: "ff5500"});
+    </script>
+    <script>
+      $('#countdown').fadeIn().css({top: "60vh", left: "5vw"});
+      Countdown.init("April 20, 2016", false);
+    </script>
+    <script type="text/javascript">
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script type="text/javascript" src="http://assets.transloadit.com/js/jquery.transloadit2-v2-latest.js"></script>
+  </body>
 </html>
 <!-- Localized -->
