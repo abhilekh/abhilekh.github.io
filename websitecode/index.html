@@ -197,7 +197,7 @@
             </div>
           </div>
 
-          <div class="backdrop" style="background-image: url('http://www.abhilekhwedsmegha.com:8080/com.wed/img/main01.jpg');
+          <div class="backdrop" id="backdrop_bg" style="background-image: url('http://www.abhilekhwedsmegha.com:8080/com.wed/img/main01.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
@@ -224,6 +224,19 @@
               ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
+
+            (function(){
+              // mobile/desktop specific        
+              if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)){
+                // mobile devices code
+                
+              }
+              else{
+                // desktop code
+
+              }
+            })();          
+
           </script>
           <script type="text/javascript" src="http://assets.transloadit.com/js/jquery.transloadit2-v2-latest.js"></script>          
         </body>        
