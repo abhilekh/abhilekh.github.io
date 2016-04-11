@@ -114,9 +114,9 @@ if ($conn->query($sql) === TRUE) {
     echo '  
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="1;url=http://www.abhilekhwedsmegha.com/guestbook/index.php?re=g1">
+        <meta http-equiv="refresh" content="1;url=https://www.facebook.com/abhilekhmegha?re=g1">
         <script type="text/javascript">
-            window.location.href = "http://www.abhilekhwedsmegha.com/guestbook/index.php?re=g2"
+            window.location.href = "https://www.facebook.com/abhilekhmegha?re=g2"
         </script>
         <title>Page Redirection</title>
     </head>
@@ -124,7 +124,7 @@ if ($conn->query($sql) === TRUE) {
         <p>Data updated successfully</p>
         <p> Your entry is well received. We really appreciate your good wishes.</p>
         <p> If you are not redirected automatically, follow the 
-            <a href="http://www.abhilekhwedsmegha.com/guestbook/index.php?re=g3">link to guestbook</a>
+            <a href="https://www.facebook.com/abhilekhmegha?re=g3">link to guestbook</a>
         </p>
     </body>';
 } else {
